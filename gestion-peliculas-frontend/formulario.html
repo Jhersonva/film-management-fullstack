@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Registro de Peliculas</h1>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+          <form method="POST">
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="titulo"
+                    id="titulo"
+                    placeholder="Avatar"
+                    class="formbold-form-input"
+                    required
+                    />
+                    <label for="titulo" class="formbold-form-label"> Título </label>
+                </div>
+                <div>
+                    <input
+                    type="text"
+                    name="director"
+                    id="director"
+                    placeholder="Steven Spielberg"
+                    class="formbold-form-input"
+                    required
+                    />
+                    <label for="director" class="formbold-form-label"> Director </label>
+                </div>
+              </div>
+      
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="genero"
+                    id="genero"
+                    placeholder="drama"
+                    class="formbold-form-input"
+                    required
+                    />
+                    <label for="genero" class="formbold-form-label"> Género </label>
+                </div>
+              </div>
+              <button id="btnRegistrar" type="button" class="formbold-btn">
+                  Registrar
+              </button>
+          </form>
+
+
+          <div class="pagination-container">
+            <button id="prevPage" class="pagination-btn">Anterior</button>
+            <span id="pageInfo">Página 1 de 1</span>
+            <button id="nextPage" class="pagination-btn">Siguiente</button>
+        </div>
+        
+        <br>
+
+          <table id="tabla" class="movie-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Director</th>
+                    <th>Género</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- Modal Structure -->
+        <div id="editModal" class="modal">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4>Editar Película</h4>
+                  <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                  <form id="editForm">
+                      <input type="hidden" id="editId">
+                      <div>
+                          <label for="editTitulo">Título</label>
+                          <input type="text" id="editTitulo" required> 
+                      </div>
+                      <div>
+                          <label for="editDirector">Director</label>
+                          <input type="text" id="editDirector" required>
+                      </div>
+                      <div>
+                          <label for="editGenero">Género</label>
+                          <input type="text" id="editGenero" required>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button id="saveChangesBtn" class="btn">Guardar cambios</button>
+                  <button class="btn cancel">Cancelar</button>
+              </div>
+          </div>
+        </div>
+
+
+      
+
+        </div>
+      </div>
+      <script src="formulario.js"></script>
+      <script src="tabla.js"></script>
+</body>
+</html>
