@@ -26,7 +26,7 @@ Un sistema de gestión de películas FullStack que permite a los usuarios gestio
 1. **Clona el repositorio desde GitHub:**
 
     ```bash
-    git clone https://github.com/Jhersonva/Film-Management-FullStack.git
+    git clone https://github.com/Jhersonva/film-management-fullStack.git
 	cd Film-Management/gestion-peliculas-backend
     ```
 
@@ -44,7 +44,7 @@ Un sistema de gestión de películas FullStack que permite a los usuarios gestio
 1. **Navegar al Directorio del Frontend**:
 
  ```bash
-    cd Film-Management/gestion-peliculas-frontend
+    cd film-management-fullStack/gestion-peliculas-frontend
  ```
 2. **Abrir index.html en tu navegador web**.
 
